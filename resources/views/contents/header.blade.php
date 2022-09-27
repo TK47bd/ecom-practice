@@ -1,62 +1,86 @@
-<div class="container-fluid px-5 d-none d-lg-block">
-    <div class="row gx-5 py-3 align-items-center">
-        <div class="col-lg-3">
-            <div class="d-flex align-items-center justify-content-start">
-                <i class="bi bi-phone-vibrate fs-1 text-primary me-2"></i>
-                <h2 class="mb-0">+01234-56789</h2>
+<!-- Start Top Nav -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+    <div class="container text-light">
+        <div class="w-100 d-flex justify-content-between">
+            <div>
+                <i class="fa fa-envelope mx-2"></i>
+                <a class="navbar-sm-brand text-light text-decoration-none"
+                    href="mailto:info@magic.com">info@magic.com</a>
+                <i class="fa fa-phone mx-2"></i>
+                <a class="navbar-sm-brand text-light text-decoration-none" href="tel:+012345-6789">+012345-6789</a>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="d-flex align-items-center justify-content-center">
-                <a href="{{ url('/') }}" class="navbar-brand ms-lg-5">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Magic</span>WOrld</h1>
-                </a>
+            <div>
+                <a class="text-light" href="#" target="_blank" rel="sponsored"><i
+                        class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                <a class="text-light" href="#" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                <a class="text-light" href="#" target="_blank"><i class="fab fa-youtube fa-sm fa-fw"></i></a>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="d-flex align-items-center justify-content-end">
-                @include('contents.userLog')
-                <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Topbar End -->
-
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
-    <a href="{{ url('/') }}" class="navbar-brand d-flex d-lg-none">
-        <h1 class="m-0 display-4 text-secondary"><span class="text-white">Magic</span>WOrld</h1>
-    </a>
-
-    <div class="d-flex d-lg-none">
-        @include('contents.userLog')
-    </div>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto py-0">
-            <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Service</a>
-            <a href="product.html" class="nav-item nav-link">Product</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                <div class="dropdown-menu m-0">
-                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                    <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                    <a href="feature.html" class="dropdown-item">Features</a>
-                    <a href="team.html" class="dropdown-item">The Team</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
     </div>
 </nav>
-<!-- Navbar End -->
+<!-- Close Top Nav -->
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light shadow">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <a class="navbar-brand h3 text-dark logo align-self-center" href="{{ url('/') }}">
+            <img src="{{ asset('img/favicon.png') }}" width="25" class="float-start me-1">
+            {{ config('app.name') }}
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+            id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    @include('contents.userLog')
+                </ul>
+
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                    data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                </a>
+                <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    <span
+                        class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                </a>
+                <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    <span
+                        class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- Close Header -->
