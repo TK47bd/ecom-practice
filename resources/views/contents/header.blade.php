@@ -24,8 +24,8 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand h3 text-dark logo align-self-center" href="{{ url('/') }}">
-            <img src="{{ asset('img/favicon.png') }}" width="25" class="float-start me-1">
+        <a class="navbar-brand h3 text-dark logo align-self-center me-5" href="{{ url('/') }}">
+            <img src="{{ asset('img/favicon.png') }}" width="25" class="float-start">
             {{ config('app.name') }}
         </a>
 
@@ -51,11 +51,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    @include('contents.userLog')
                 </ul>
 
             </div>
-            <div class="navbar align-self-center d-flex">
+            <div class="navbar align-self-center d-flex ms-5">
                 <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                     <div class="input-group">
                         <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
@@ -78,6 +77,7 @@
                     <span
                         class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                 </a>
+                @include('contents.userLog')
             </div>
         </div>
 

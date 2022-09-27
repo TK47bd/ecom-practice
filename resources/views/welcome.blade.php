@@ -43,8 +43,8 @@
                                 <h1 class="h1 text-success"><b> {{ config('app.name') }} </b></h1>
                                 <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
                                 <p>
-                                    {{ config('app.name') }} is an eCommerce HTML5 CSS template with latest version
-                                    of Bootstrap 5
+                                    {{ config('app.name') }} is an eCommerce site which will provide with best service
+                                    and quality products
                                 </p>
                             </div>
                         </div>
@@ -59,12 +59,10 @@
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Proident occaecat</h1>
-                                <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                <h1 class="h1">Get the best deals</h1>
+                                <h3 class="h2">Don't miss it!</h3>
                                 <p>
-                                    You are permitted to use this Zay CSS template for your commercial websites.
-                                    You are <strong>not permitted</strong> to re-distribute the template ZIP file in any
-                                    kind of template collection websites.
+                                    Best promotional sells with the best deal only on our platform
                                 </p>
                             </div>
                         </div>
@@ -79,12 +77,11 @@
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                <h1 class="h1">Keep your trust</h1>
+                                <h3 class="h2">You will return to us </h3>
                                 <p>
-                                    We bring you 100% free CSS templates for your websites.
-                                    If you wish to support TemplateMo, please make a small contribution via PayPal or
-                                    tell your friends about our website. Thank you.
+                                    You will never have any complain and intention of not using again because of the
+                                    quality of our service we provide.
                                 </p>
                             </div>
                         </div>
