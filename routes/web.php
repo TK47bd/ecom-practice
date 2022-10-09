@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RedirectController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,6 @@ Route::get('/logout', [RedirectController::class, 'LogoutUser']);
 Route::get('/home', function () {
     return view('welcome');
 });
+
+Route::get('/all-category', [AdminController::class, 'AllCategory']);
+Route::post('/add-category', [AdminController::class, 'AddCategory']);
